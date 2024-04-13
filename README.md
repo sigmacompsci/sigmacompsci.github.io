@@ -1,2 +1,3 @@
-# sigmacompsci.github.io
-Website
+# SigmaCS Website
+
+ΣΣΣ
