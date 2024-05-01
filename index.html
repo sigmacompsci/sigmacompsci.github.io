@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- © 2024 Sigma Computer Science -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Sigma Computer Science, SigmaCS, Hackathon, New Jersey Hackathons, intrepidbird, pointySphere, Cellius-1, Computer Science, Coding, Programming, Team, Σ">
@@ -15,7 +16,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         .card-img-container {
-            height: 250px; /* Adjust this */
+            height: 250px;
             overflow: hidden;
         }
 
@@ -31,9 +32,10 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            background-color: rgba(255, 255, 255, 0.9);
             z-index: 9999;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
         }
@@ -52,7 +54,7 @@
         <div id="loading-text">We're not there to compete. We're there to win.</div>
     </div>
     
-       <!-- Navbar (sit on top) -->
+       <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">SigmaCS</a>
         <!-- Toggle button for small screens -->
@@ -91,8 +93,8 @@
     <!-- Add space here -->
     <div style="margin-top: 25px;"></div>
 
-    <!-- Software Section -->
-    <section id="featured-projects" class="bg-white py-5">
+    <!-- Description Cards Section -->
+    <section id="featured" class="bg-white py-5">
         <div class="container">
             <h2 class="text-center mb-4">Who Are We?</h2>
             <div class="row">
@@ -141,8 +143,16 @@
     &copy; 2024 Sigma Computer Science. All rights reserved.
 </footer>
 
-    <!-- Bootstrap & jQuery JS -->
+    <!-- Bootstrap, jQuery, and Custom JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Simulate loading by hiding the loading screen after a certain duration
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById('loading-screen').style.display = 'none';
+            }, 3000); // Adjust the duration (in milliseconds) as needed
+        };
+    </script>
 </body>
 </html>
