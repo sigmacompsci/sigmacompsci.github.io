@@ -25,35 +25,9 @@
             height: 100%;
             width: 100%;
         }
-        
-        #loading-screen {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(255, 255, 255, 0.9);
-            z-index: 9999;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        #loading-text {
-            font-size: 24px;
-            font-weight: bold;
-        }
     </style>
 </head>
-<body>
-
-
-    <!-- Loading Screen -->
-    <div id="loading-screen">
-        <div id="loading-text">We're not there to compete. We're there to win.</div>
-    </div>
-    
+<body
        <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">SigmaCS</a>
@@ -72,6 +46,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="projects">Projects</a>
                 </li>
+                <li class="nav-item-active">
+                    <a class="nav-link" href="trilogy">The Trilogy</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -84,8 +61,8 @@
             </div>
             <div class="col-md-6">
                 <h2>Sigma Computer Science</h2>
-                <p>We are 2x hackathon winners, BRCS club founders and leaders, developers of 'Graze', and just programming friends.</p>
-                <p><strong>Sigma Computer Science</strong> is a hackathon team consisting of Alex Sheng (intrepidbird), Dhruv Rakhade (pointySphere), and Tharun Naguleswaran (Cellius-1). We participate in local hackathons across New Jersey, and enjoy programming and coding in general. Alex and Dhruv are founders of the Bridgewater-Raritan Computer Science Club, and Tharun is the Webmaster of BRCS. We primarily consist of these three members, but occasionally open up a fourth spot in select hackathons.</p>
+                <p>A hackathon team in New Jersey</p>
+                <p><strong>Sigma Computer Science</strong> is a hackathon team consisting of Alex Sheng (intrepidbird), Dhruv Rakhade (pointySphere), Tharun Naguleswaran (Cellius-1), Jay Fang (FoxJavaGauss), and Anshuman Roy (isAnshTHEmaN). We participate in hackathons across New Jersey, and enjoy programming and computer science in general. Alex, Dhruv, and Jay are founders of the Bridgewater-Raritan Computer Science Club, and Tharun is the Webmaster of BRCS. We have developed praised and award-winning projects, such as the SigmaCS Trilogy.</p>
             </div>
         </div>
     </section>
@@ -117,7 +94,7 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Team</h5>
-                            <p class="card-text">Our hackathon team that competes in local competitions</p>
+                            <p class="card-text">Our distinguished hackathon team based in New Jersey</p>
                             <a href="team" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
@@ -129,7 +106,7 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Projects</h5>
-                            <p class="card-text">Our hackathon and coding projects that we have programmed</p>
+                            <p class="card-text">Our hackathon and coding projects that we have developed</p>
                             <a href="projects" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
@@ -146,13 +123,5 @@
     <!-- Bootstrap, jQuery, and Custom JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        // Simulate loading by hiding the loading screen after a certain duration
-        window.onload = function() {
-            setTimeout(function() {
-                document.getElementById('loading-screen').style.display = 'none';
-            }, 1000); // Adjust the duration (in milliseconds) as needed
-        };
-    </script>
 </body>
 </html>
