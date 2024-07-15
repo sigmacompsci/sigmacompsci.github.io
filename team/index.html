@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- © 2024 Sigma Computer Science -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Sigma Computer Science, SigmaCS, Hackathon, New Jersey Hackathons, intrepidbird, pointySphere, Cellius-1, Computer Science, Coding, Programming, Team, Σ">
     <title>SigmaCS | Team</title>
     <!-- Favicon -->
     <link rel="icon" href="https://sigmacompsci.github.io/images/sigma-f.png">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
         .card-img-container {
             height: 350px; /* Adjust this */
@@ -21,109 +23,109 @@
         }
     </style>
 </head>
-<body>
+<body class="bg-white text-gray-900">
 
-       <!-- Navbar (sit on top) -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="https://sigmacompsci.github.io/">SigmaCS</a>
-        <!-- Toggle button for small screens -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="https://sigmacompsci.github.io/about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Team</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://sigmacompsci.github.io/projects">Projects</a>
-                </li>
-            </ul>
+    <!-- Navbar -->
+    <nav class="bg-gray-100 p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <a class="text-xl font-bold" href="https://sigmacompsci.github.io/">SigmaCS</a>
+            <button class="lg:hidden p-2 text-gray-500 focus:outline-none focus:ring" id="navbar-toggle">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <div class="hidden lg:flex space-x-4" id="navbar-menu">
+                <a class="text-gray-700 hover:text-gray-900" href="https://sigmacompsci.github.io/about">About</a>
+                <a class="text-gray-700 hover:text-gray-900" href="#">Team</a>
+                <a class="text-gray-700 hover:text-gray-900" href="https://sigmacompsci.github.io/projects">Projects</a>
+            </div>
         </div>
     </nav>
 
     <!-- Header -->
     <header class="bg-white text-black text-center p-4">
-        <h1>Meet the Team</h1>
+        <h1 class="text-3xl font-bold mb-4">Meet the Team</h1>
     </header>
 
     <!-- Team Section -->
-    <section id="featured-projects" class="bg-white py-5">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
+    <section id="team" class="bg-white py-10 px-4">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+                    <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden">
                         <div class="card-img-container">
                             <img src="https://sigmacompsci.github.io/images/sigma-1.jpg" alt="Alex">
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Alex Sheng</h5>
-                            <p class="card-text">Alex is a 2x hackathon winner. Alex works in the front-end, user interface, and content organization areas of projects. You can find him on GitHub under the username 'intrepidbird'.</p>
-                            <a href="https://intrepidbird.me" class="btn btn-primary">Website</a>
+                        <div class="p-4">
+                            <h5 class="text-xl font-bold mb-2">Alex Sheng</h5>
+                            <p class="text-gray-700 mb-4">Alex is a 2x hackathon winner. Alex works in the front-end, user interface, and content organization areas of projects. You can find him on GitHub under the username 'intrepidbird'.</p>
+                            <a href="https://intrepidbird.me" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg">Website</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
+                <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+                    <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden">
                         <div class="card-img-container">
                             <img src="https://sigmacompsci.github.io/images/sigma-2.png" alt="Dhruv">
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Dhruv Rakhade</h5>
-                            <p class="card-text">Dhruv is a 2x hackathon winner. Dhruv works in the back-end, database, and debugging areas of projects. You can find him on GitHub under the username 'pointySphere'.</p>
-                            <a href="https://pointySphere.github.io" class="btn btn-primary">Website</a>
+                        <div class="p-4">
+                            <h5 class="text-xl font-bold mb-2">Dhruv Rakhade</h5>
+                            <p class="text-gray-700 mb-4">Dhruv is a 2x hackathon winner. Dhruv works in the back-end, database, and debugging areas of projects. You can find him on GitHub under the username 'pointySphere'.</p>
+                            <a href="https://pointySphere.github.io" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg">Website</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
+                <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+                    <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden">
                         <div class="card-img-container">
                             <img src="https://sigmacompsci.github.io/images/sigma-3.jpg" alt="Tharun">
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Tharun Naguleswaran</h5>
-                            <p class="card-text">Tharun is a hackathon winner. Tharun works in the design, styling, and front-end areas of projects. You can find him on GitHub under the username 'Cellius-1'.</p>
-                            <a href="https://thernel.me" class="btn btn-primary">Website</a>
+                        <div class="p-4">
+                            <h5 class="text-xl font-bold mb-2">Tharun Naguleswaran</h5>
+                            <p class="text-gray-700 mb-4">Tharun is a hackathon winner. Tharun works in the design, styling, and front-end areas of projects. You can find him on GitHub under the username 'Cellius-1'.</p>
+                            <a href="https://thernel.me" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg">Website</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
+                <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+                    <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden">
                         <div class="card-img-container">
                             <img src="https://sigmacompsci.github.io/images/sigma-4.png" alt="Jay">
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Jay Fang</h5>
-                            <p class="card-text">Jay is a hackathon participant. Jay works in the back-end and functionality areas of projects. You can find him on GitHub under the username 'FoxJavaGauss'.</p>
-                            <a href="https://FoxJavaGauss.github.io/My-Personal-Website" class="btn btn-primary">Website</a>
+                        <div class="p-4">
+                            <h5 class="text-xl font-bold mb-2">Jay Fang</h5>
+                            <p class="text-gray-700 mb-4">Jay is a hackathon participant. Jay works in the back-end and functionality areas of projects. You can find him on GitHub under the username 'FoxJavaGauss'.</p>
+                            <a href="https://FoxJavaGauss.github.io/My-Personal-Website" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg">Website</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
+                <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+                    <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden">
                         <div class="card-img-container">
                             <img src="https://sigmacompsci.github.io/images/sigma-5.jpg" alt="Anshuman">
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Anshuman Roy</h5>
-                            <p class="card-text">Anshuman is a hackathon participant. Anshuman works in the front-end and research areas of projects. You can find him on GitHub under the username 'isAnshTHEmaN'.</p>
-                            <a href="https://github.com/isAnshTHEmaN" class="btn btn-primary">Website</a>
+                        <div class="p-4">
+                            <h5 class="text-xl font-bold mb-2">Anshuman Roy</h5>
+                            <p class="text-gray-700 mb-4">Anshuman is a hackathon participant. Anshuman works in the front-end and research areas of projects. You can find him on GitHub under the username 'isAnshTHEmaN'.</p>
+                            <a href="https://github.com/isAnshTHEmaN" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg">Website</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-            </div>
+        </div>
+    </section>
 
-<!-- Footer -->
-<footer class="bg-light text-black text-center p-4">
-    &copy; 2024 Sigma Computer Science. All rights reserved.
-</footer>
+    <!-- Footer -->
+    <footer class="bg-gray-100 text-black text-center p-4">
+        &copy; 2024 Sigma Computer Science. All rights reserved.
+    </footer>
 
-    <!-- Bootstrap & jQuery JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Tailwind CSS JavaScript (for the toggle button) -->
+    <script>
+        document.getElementById('navbar-toggle').addEventListener('click', function () {
+            const menu = document.getElementById('navbar-menu')
+            menu.classList.toggle('hidden')
+        })
+    </script>
 </body>
 </html>
